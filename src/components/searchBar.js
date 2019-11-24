@@ -3,19 +3,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 
-const Container = styled.div`
-  width: 240px;
-  height: 45px;
-  margin-top: 47px;
-  margin-left: 35px;
-  border-radius: 31px;
-  background-color: rgb(61, 139, 255, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-`;
-
 const Input = styled.input`
   flex-grow: 1;
   margin-left: 23px;
@@ -32,6 +19,23 @@ const Input = styled.input`
   color: #c2ddff;
   &::-webkit-input-placeholder {
     color: #c2ddff;
+  }
+
+`;
+
+const Container = styled.div`
+  width: 240px;
+  height: 45px;
+  border-radius: 31px;
+  background-color: rgb(61, 139, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  transition: background-color 0.5s ease;
+
+  &:hover, &:focus-within {
+    background-color: rgb(61, 139, 255, 0.5);
   }
 `;
 
