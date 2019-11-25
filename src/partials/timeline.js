@@ -7,6 +7,7 @@ const ElapsedTimeBorder = styled.div`
 `;
 
 const RemainingTimeBorder = styled.div`
+  z-index: 0;
   height: calc(48 * 42px - ${props => props.heightOffset}px);
   border-left: solid 1px rgba(176, 190, 212, 0.3);
   border-top: solid 1px rgba(176, 190, 212, 0.3);

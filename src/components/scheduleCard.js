@@ -17,6 +17,7 @@ const Card = styled.div`
   margin-left: 18px;
   position: absolute;
   top: ${props => props.heightOffset}px;
+  z-index: 10;
 `;
 
 const Container = styled.div`
