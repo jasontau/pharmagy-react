@@ -56,14 +56,33 @@ function Controls() {
     dispatch(UpdateTime(result));
   };
 
-  const ResetTime = () => dispatch(UpdateTime(moment().format('HHmm')))
+  const ResetTime = () => dispatch(UpdateTime(null));
 
   const DebouncedUpdateTime = debounce(DispatchUpdateTime, 250);
 
   return (
     <Container>
+      <Typography variant='h4' gutterBottom>
+        Pharmagy App Demo
+      </Typography>
+      <Typography variant='body1' gutterBottom>
+        Original Design by{' '}
+        <a href='https://dribbble.com/adam_sokolowski'>Adam Sokołowski</a>
+      </Typography>
+      <Typography variant='body1' gutterBottom>
+        Free Sketch Files provided here:{' '}
+        <a href='https://dribbble.com/shots/6592169-FREE-Pharmagy-Medical-App-demo'>
+          https://dribbble.com/shots/6592169-FREE-Pharmagy-Medical-App-demo
+        </a>
+      </Typography>
+      <hr></hr>
+      <Typography variant='body2' gutterBottom>
+        Packages: create-react-app, styled-components, moment.js, swiper.js,
+        @material-ui/icons, mdi-material-ui icons
+      </Typography>
+      <hr></hr>
       <Typography id='discrete-slider-always' gutterBottom>
-        Override Time
+        Controls
       </Typography>
       <div style={{ marginTop: '2em' }}>
         <Slider
