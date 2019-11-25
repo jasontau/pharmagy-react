@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Slider from '@material-ui/core/Slider';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import { PrependZero } from '../util/time';
 import { debounce } from 'lodash';
 import { makeStyles } from '@material-ui/core/styles';
@@ -80,6 +81,9 @@ function Controls() {
         Packages: create-react-app, styled-components, moment.js, swiper.js,
         @material-ui/icons, mdi-material-ui icons
       </Typography>
+      <a href='https://github.com/jasontau/pharmagy-react'>
+        <GitHubIcon color='primary' fontSize='large' />
+      </a>
       <hr></hr>
       <Typography id='discrete-slider-always' gutterBottom>
         Controls
