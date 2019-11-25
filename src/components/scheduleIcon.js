@@ -12,9 +12,9 @@ const useStyles = color => {
   })();
 };
 
-function ScheduleIcon({ color }) {
+function ScheduleIcon({ color, ...rest }) {
   const classes = useStyles(color);
-  return <Schedule className={classes.icon}></Schedule>;
+  return <Schedule {...rest} className={classes.icon}></Schedule>;
 }
 
 export default ScheduleIcon;
