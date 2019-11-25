@@ -21,5 +21,5 @@ export function SelectSchedule() {
 export function SelectOverrideTime() {
   const state = SelectCurrentState();
 
-  return state.overrideTime || moment()
+  return state.overrideTime || moment().format('HHmm')
 }

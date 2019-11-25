@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Screen from './components/screen';
+import Controls from './components/controls';
 import Patients from './pages/patients';
 import { StateProvider } from './state';
 
@@ -12,6 +13,7 @@ function App() {
           <Screen>
             <Patients />
           </Screen>
+          <Controls/>
         </header>
       </div>
     </StateProvider>

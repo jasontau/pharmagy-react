@@ -22,8 +22,6 @@ const Events = styled.div`
 function FirstSlot({ time }) {
   const schedule = SelectSchedule();
   const overrideTime = SelectOverrideTime();
-  const currentTimeInMinutes =
-    overrideTime.hours() * 60 + overrideTime.minutes();
 
   return (
     <TimeSlot>
@@ -32,7 +30,7 @@ function FirstSlot({ time }) {
           <ScheduleCard
             key={event.id}
             schedule={event}
-            disabled={currentTimeInMinutes >= TimeInMinutes(event.end)}
+            disabled={TimeInMinutes(overrideTime) >= TimeInMinutes(event.end)}
           />
         ))}
       </Events>

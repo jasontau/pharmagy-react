@@ -61,5 +61,6 @@ export default {
       start: '1400',
       end: '1645'
     }
-  ]
+  ],
+  overrideTime: null,
 };
