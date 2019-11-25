@@ -79,7 +79,7 @@ function Controls() {
       <hr></hr>
       <Typography variant='body2' gutterBottom>
         Packages: create-react-app, styled-components, moment.js, swiper.js,
-        @material-ui/icons, mdi-material-ui icons
+        flickity.js, @material-ui/icons, mdi-material-ui icons
       </Typography>
       <a href='https://github.com/jasontau/pharmagy-react'>
         <GitHubIcon color='primary' fontSize='large' />

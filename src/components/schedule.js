@@ -14,6 +14,7 @@ const Container = styled.div`
 const SwiperContainer = styled.div`
   clip-path: inset(0px 0px);
   height: inherit;
+  cursor: ns-resize;
 `;
 
 const Headings = styled.div`

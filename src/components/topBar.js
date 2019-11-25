@@ -55,6 +55,7 @@ const TotalPatients = styled.div`
 
 const PatientCards = styled.div`
   margin-top: -52px;
+  cursor: ew-resize;
 `;
 
 function TopBar() {

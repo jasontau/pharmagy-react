@@ -24,6 +24,7 @@ const StyledButton = styled.button`
   letter-spacing: 0.3px;
   color: #c2ddff;
   transition: background-color 0.5s ease;
+  
   &:hover {
     background-color: #66a3ff;
   }
