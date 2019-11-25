@@ -27,7 +27,7 @@ function Schedule() {
     height: '42',
     freeMode: true,
     freeModeSticky: false,
-    initialSlide: 0, //15,
+    initialSlide: 15,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
