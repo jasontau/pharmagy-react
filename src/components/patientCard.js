@@ -11,6 +11,7 @@ const Card = styled.div`
   box-shadow: 0 15px 9px -7px #e5eaf5;
   background-color: #1b69c7;
   display: flex;
+  margin-right: 15px;
 `;
 
 const Strip = styled.div`
