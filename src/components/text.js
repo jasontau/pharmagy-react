@@ -10,6 +10,7 @@ const AppText = styled.div`
   line-height: 1.42;
   letter-spacing: 0.3px;
   color: ${props => theme[props.color] || theme.secondary};
+  text-align: left;
 `;
 
 function Text({ text, ...rest }) {
