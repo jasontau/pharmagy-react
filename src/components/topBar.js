@@ -2,7 +2,8 @@ import React from 'react';
 import SearchBar from './searchBar';
 import Profile from './profile';
 import DateButton from './dateButton';
-import PatientCard from './patientCard'
+import PatientCard from './patientCard';
+import Carousel from './carousel';
 import styled from 'styled-components';
 
 const BackgroundTop = styled.div`
@@ -52,24 +53,33 @@ const TotalPatients = styled.div`
   text-align: left;
 `;
 
+const PatientCards = styled.div`
+  margin-top: -52px;
+`;
+
 function TopBar() {
   return (
     <>
-    <BackgroundTop>
-      <Container>
-        <SearchContainer>
-          <SearchBar />
-          <Profile />
-        </SearchContainer>
-        <DateButton text='Today' />
-        <PatientsSummary>
-          <MyPatients>My Patients</MyPatients>
-          <TotalPatients>12 total</TotalPatients>
-        </PatientsSummary>
-      </Container>
-      
-    </BackgroundTop>
-    <PatientCard />
+      <BackgroundTop>
+        <Container>
+          <SearchContainer>
+            <SearchBar />
+            <Profile />
+          </SearchContainer>
+          <DateButton text='Today' />
+          <PatientsSummary>
+            <MyPatients>My Patients</MyPatients>
+            <TotalPatients>12 total</TotalPatients>
+          </PatientsSummary>
+        </Container>
+      </BackgroundTop>
+      <PatientCards>
+        <Carousel>
+          <PatientCard />
+          <PatientCard />
+          <PatientCard />
+        </Carousel>
+      </PatientCards>
     </>
   );
 }
